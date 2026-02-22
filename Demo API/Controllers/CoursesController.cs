@@ -18,7 +18,6 @@ namespace Demo_API.Controllers
         }
 
         // GET: api/courses/list
-        [HttpGet]
         [HttpGet("list")] 
         public async Task<ActionResult<IEnumerable<Course>>> GetCourses()
         {
