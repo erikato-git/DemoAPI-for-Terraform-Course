@@ -19,7 +19,7 @@ namespace Demo_API.Controllers
 
         // GET: api/products
         [HttpGet]
-        [Route("api/Products/list")]
+        [Route("list")]
         public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
         {
             var products = await _context.Products.ToListAsync();
@@ -28,7 +28,7 @@ namespace Demo_API.Controllers
 
 
         [HttpGet]
-        [Route("api/Products/hello")]
+        [Route("hello")]
         public async Task<ActionResult<string>> Hello()
         {
             return "Hello";
