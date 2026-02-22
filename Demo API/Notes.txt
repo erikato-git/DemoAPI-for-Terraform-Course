@@ -1,0 +1,19 @@
+Original appsettings.json before moving to Azure:
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=DemoAPI;Integrated Security=SSPI;Trust Server Certificate=True"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*"
+}
+
+Azure Connection-string:
+  "ConnectionStrings": {
+    "AZURE_SQL_CONNECTIONSTRING": "Server=tcp:sqlserver-erikato.database.windows.net,1433;Initial Catalog=appdb;Persist Security Info=False; User ID=sqladmin;Password=Azure@3456;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+  },
+
