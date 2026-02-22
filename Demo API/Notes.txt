@@ -14,6 +14,6 @@ Original appsettings.json before moving to Azure:
 
 Azure Connection-string:
   "ConnectionStrings": {
-    "AZURE_SQL_CONNECTIONSTRING": "Server=tcp:sqlserver-erikato.database.windows.net,1433;Initial Catalog=appdb;Persist Security Info=False; User ID=sqladmin;Password=Azure@3456;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+    "AZURE_SQL_CONNECTIONSTRING": "Server=tcp:sqlserver-erikato.database.windows.net,1433;Initial Catalog=appdb;Persist Security Info=False; User ID=sqladmin;Password=Azure@3456;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
   },
 
