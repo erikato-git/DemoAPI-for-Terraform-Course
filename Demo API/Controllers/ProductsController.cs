@@ -26,7 +26,7 @@ namespace Demo_API.Controllers
         }
 
 
-        [HttpGet("route")] 
+        [HttpGet("hello")] 
         public async Task<ActionResult<string>> Hello()
         {
             return "Hello";
